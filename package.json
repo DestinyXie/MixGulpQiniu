@@ -1,7 +1,7 @@
 {
-  "name": "mix-gulp-hash-src",
-  "version": "1.0.0",
-  "description": "Automatically add cache busting hashes to links in HTML and CSS,inherit form [gulp-qiniu-cdn](https://www.npmjs.com/package/gulp-qiniu-cdn)",
+  "name": "mix-gulp-qiniu",
+  "version": "1.0.1",
+  "description": "Gulp plugin for qiniu to upload file stream or directory, inherit form [gulp-qiniu-cdn](https://www.npmjs.com/package/gulp-qiniu-cdn)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
