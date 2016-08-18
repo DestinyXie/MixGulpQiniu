@@ -1,0 +1,26 @@
+{
+  "name": "mix-gulp-hash-src",
+  "version": "1.0.0",
+  "description": "Automatically add cache busting hashes to links in HTML and CSS,inherit form [gulp-qiniu-cdn](https://www.npmjs.com/package/gulp-qiniu-cdn)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mix gulpplugin qiniucdn cdn"
+  ],
+  "author": {
+      "name": "DestinyXie",
+      "email": "xber1986@gmail.com"
+  },
+  "dependencies": {
+    "qiniu": "^6.1.7",
+    "through2": "^0.6.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DestinyXie/MixGulpQiniu.git"
+  },
+  "license": "MIT"
+}
+
