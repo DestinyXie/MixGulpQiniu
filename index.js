@@ -32,7 +32,8 @@ function gulpQiniuCdn(conf) {
   putpolicy.asyncOps = conf.asyncOps || null;
   putpolicy.endUser = conf.endUser || null;
   putpolicy.expires = conf.expires || 3600;
-  var uptokenStr = putpolicy.token();
+  // var uptokenStr = putpolicy.token();
+  var uptokenStr;
 
   //uploadFile parameter
   var params = conf.params || {};
@@ -58,6 +59,10 @@ function gulpQiniuCdn(conf) {
         realKey = qiniuDir + regResult[1];
       }
     }
+
+    // scope: <bucket> 只允许“新增”资源, <bucket>:<key>允许“修改”，即覆盖原有资源
+    putpolicy.scope = (conf.scope + ':' + realKey) || null;
+    uptokenStr = putpolicy.token();
 
     // console.log(realKey);
     qiniu.io.putFile(uptokenStr, realKey, path, extra, function(err, ret){
