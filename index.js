@@ -2,6 +2,7 @@ var through = require('through2');
 var qiniu = require('qiniu');
 
 // consts
+const PATH_SEPARATOR = require('path').sep;
 const PLUGIN_NAME = 'mix-gulp-qiniu';
 
 function uploadFile(localFile, key, uptoken, cb) {
@@ -47,7 +48,7 @@ function gulpQiniuCdn(conf) {
   // creating a stream through which each file will pass
   var stream = through.obj(function(file, enc, cb) {
     var path = file.history[0];
-    var fileName = path.split("/").pop();
+    var fileName = path.split(PATH_SEPARATOR).pop();
 
     var extra = new qiniu.io.PutExtra(params, mimeType, crc32, checkCrc);
 
