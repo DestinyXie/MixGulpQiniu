@@ -18,7 +18,7 @@ The following example will show the minimal usage with mix-gulp-qiniu
 
 ```
 var gulp = require('gulp'),
-    qiniuCDN = require('gulp-qiniu-cdn');
+    qiniuCDN = require('mix-gulp-qiniu');
 
 gulp.task('qiniu', function () {
     return gulp.src(['app/**/*.*'])
