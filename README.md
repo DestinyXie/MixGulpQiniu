@@ -1,5 +1,5 @@
 ![qiniu](http://assets.qiniu.com/qiniu-409x220.png)
-# mix-gulp-qiniu-cdn
+# mix-gulp-qiniu
 
 > Gulp plugin for qiniu to upload file stream, copyright mix corp.
 inherit form [gulp-qiniu-cdn](https://www.npmjs.com/package/gulp-qiniu-cdn)
